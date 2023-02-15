@@ -1,7 +1,4 @@
 ﻿namespace LanchesMac;
-public class Startap
-{
-    namespace LanchesMac;
 public class Startup
 {
     public Startup(IConfiguration configuration)
@@ -45,5 +42,5 @@ public class Startup
         });
     }
 }
-}
+
 

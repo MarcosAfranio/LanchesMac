@@ -4,15 +4,17 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        CreateHostBilder(args)
-            .Build()
-            .Run();
+        //Extensão CeateAdminRole
+        CreateHostBuilder(args)
+           .Build()
+           .Run();
     }
 
-    public static IHostBuilder CreateHostBilder(string[] agrs) =>
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
-        .ConfigureWebHostDefaults(WebHostBuilder =>
-        {
-            WebHostBuilder.UseStartup<Startap>();
-        });
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+
 }
