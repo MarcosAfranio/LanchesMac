@@ -16,6 +16,7 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options => 
            options.UseSqlServer(Configuration.GetConnectionString("DefaultConenection")));
+
         services.AddControllersWithViews();
     }
 
