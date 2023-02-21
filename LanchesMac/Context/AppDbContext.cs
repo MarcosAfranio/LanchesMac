@@ -5,6 +5,8 @@ namespace LanchesMac.Context
 {
     public class AppDbContext : DbContext
     {
+        internal IEnumerable<Categoria> Categorias;
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
