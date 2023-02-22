@@ -20,6 +20,7 @@ namespace LanchesMac.Repositories
                                    Include(c => c.Categoria);
         public Lanche GetLacheById(int lancheId)
         {
-            return _context.Lanches.FirstOrDefault(l=> l.LancheId == lancheId);
+            return _context.Lanches.FirstOrDefault(l => l.LancheId == lancheId);
+        }
     }
 }
